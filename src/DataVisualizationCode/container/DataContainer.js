@@ -67,7 +67,12 @@ const DataContainer = () => {
     }, [currentPage]);
 
     if (loading) {
-      return <div>Loading...</div>;
+      return (
+        <div className="text-center">
+          <div className="spinner-border" role="status">
+          </div>
+        </div>
+      );
     }
   
     if (error) {
